@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: system-ui, "serif" !important;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body #container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*header*/
+  /*section*/
+}
+
+body #container header {
+  width: 100%;
+  height: 20%;
+  padding: 40px 0 40px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container header #between-line {
+  width: 30%;
+  position: relative;
+}
+
+body #container header #between-line #line {
+  width: 100%;
+  border-top: 0.1px solid #4b4a4a;
+  position: relative;
+  right: -15%;
+}
+
+body #container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 1.7rem;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(42, 38, 100, 0.7);
+  z-index: 2;
+  position: relative;
+}
+
+body #container header nav #blur {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 48, 58, 0.5);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  z-index: -1;
+}
+
+body #container header nav .nav-number {
+  font-size: small;
+  font-weight: bolder;
+}
+
+body #container header nav li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  text-transform: uppercase;
+  -webkit-transition: border .1s ease;
+  transition: border .1s ease;
+  position: relative;
+}
+
+body #container header nav li::after {
+  content: "";
+  display: block;
+  background: white;
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  /* Position X halfway in */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: width .2s ease-out;
+  transition: width .2s ease-out;
+}
+
+body #container header nav li:hover:after {
+  width: 60%;
+}
+
+body #container header nav li a, body #container header nav li span {
+  font-size: .7rem;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+body #container header nav li:hover {
+  cursor: pointer;
+}
+
+body #container header nav li:hover a, body #container header nav li:hover span {
+  color: #b5abee;
+}
+
+body #container header nav .destination::after {
+  width: 60%;
+}
+
+body #container h2 {
+  margin: 20px 0 0 6%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+body #container h2 span {
+  color: #5f5c5c;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+body #container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4%;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+body #container section .planet-image {
+  display: block;
+  width: 28rem;
+  height: 28rem;
+}
+
+body #container section #left-section {
+  width: 45%;
+  height: 100%;
+}
+
+body #container section #right-section {
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #container section #right-section #planets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 20px;
+}
+
+body #container section #right-section #planets li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 40px;
+  text-transform: uppercase;
+  -webkit-transition: border .1s ease;
+  transition: border .1s ease;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+body #container section #right-section #planets li:hover {
+  cursor: pointer;
+}
+
+body #container section #right-section #planets li::after {
+  content: "";
+  display: block;
+  background: white;
+  width: 0px;
+  height: 4px;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  /* Position X halfway in */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: width .2s ease-out;
+  transition: width .2s ease-out;
+}
+
+body #container section #right-section #planets li:hover:after {
+  width: 40%;
+}
+
+body #container section #right-section #planets .active::after {
+  width: 40%;
+}
+
+body #container section #right-section #planet-name {
+  padding: 5% 0 3% 5%;
+  font-size: 7rem;
+  font-family: 'sans-serif' !important;
+  font-weight: 300;
+}
+
+body #container section #right-section #planet-description {
+  padding-left: 5%;
+  font-family: 'Bellefair', 'sans-serif';
+  margin-bottom: 30px;
+}
+
+body #container section #right-section hr {
+  border: none;
+  height: 1px;
+  background: gray;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body #container section #right-section #planet-informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15% 10px 20px;
+  height: 30%;
+}
+
+body #container section #right-section #planet-informations .title {
+  font-size: .9rem;
+  color: #c2b9b9;
+  font-weight: 400;
+}
+
+body #container section #right-section #planet-informations .inf {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1020px) {
+  html {
+    font-size: 12px;
+  }
+  html #container {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  html #container header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 13%;
+    gap: 10px;
+    padding: 10px 30px;
+  }
+  html #container header div#line {
+    display: none;
+  }
+  html #container header nav {
+    width: 90%;
+    height: 30%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: 700;
+    gap: 0;
+  }
+  html #container header nav li {
+    width: 25%;
+  }
+  html #container h2 {
+    font-size: 1rem;
+  }
+  html #container h2 span {
+    font-size: .9rem;
+  }
+  html #container #section {
+    width: 90%;
+    min-height: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html #container #section #left-section {
+    width: 100%;
+  }
+  html #container #section #left-section .planet-image {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+  }
+  html #container #section #right-section {
+    width: 100%;
+    min-height: 100%;
+  }
+  html #container #section #right-section h1#planet-name {
+    font-size: 3rem;
+    text-align: center;
+  }
+  html #container #section #right-section p#planet-description {
+    font-size: .9rem;
+  }
+  html #container #section #right-section div#planet-informations {
+    padding: 10px 20px;
+    height: 40%;
+  }
+}
+/*# sourceMappingURL=destination.css.map */
